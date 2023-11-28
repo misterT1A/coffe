@@ -273,13 +273,21 @@ class BurgerMenu {
     this.burgerBtn = document.querySelector('.burger_btn');
     this.navLinks = document.querySelectorAll('.nav_item_link');
     this.menuLink = document.querySelector('.header_btn');
-    this.addListers();
+    this.addListners();
+    this.checkWidth();
   }
-  addListers() {
+  addListners() {
+    window.addEventListener('resize', this.checkWidth.bind(this));
     this.burgerBtn.addEventListener('click', this.navTogleOnBtn.bind(this));
     this.wrapper.addEventListener('click', this.checkNavActive.bind(this));
     this.navLinks.forEach(link => link.addEventListener('click', this.checkNavActive.bind(this)));
     this.menuLink.addEventListener('click', this.checkNavActive.bind(this));
+  }
+  checkWidth() {
+    const windowWidth = document.body.offsetWidth;
+    if (windowWidth > 768) {
+      this.checkNavActive();
+    }
   }
   navTogleOnBtn() {
     if (!this.wrapper.classList.contains('nav_active')) {
@@ -311,16 +319,15 @@ class BurgerMenu {
 }
 ;// CONCATENATED MODULE: ./src/modules/utils/elementCreator.js
 class ElementCreator {
-  constructor(param) {
+  constructor(options) {
     this.element = null;
-    this.createElement(param);
+    this.createElement(options);
   }
-  createElement(param) {
-    this.element = document.createElement(param.tagName);
-    this.setCssClasses(param.classNames);
-    this.setTextContent(param.textContent, param.textHtml);
-    this.setCallback(param.callback);
-    this.setAllAttribute(param.attributes);
+  createElement(options) {
+    this.element = document.createElement(options.tagName);
+    this.setClasses(options.classNames);
+    this.setContent(options.textContent, options.textHtml);
+    this.setAttribute(options.attributes);
   }
   getElement() {
     return this.element;
@@ -337,30 +344,25 @@ class ElementCreator {
       }
     });
   }
-  setCssClasses(cssClasses) {
+  setClasses(cssClasses) {
     if (cssClasses) {
       cssClasses.forEach(cssClass => this.element.classList.add(cssClass));
     }
   }
-  setAllAttribute(attributes) {
+  setAttribute(attributes) {
     if (attributes) {
       Object.keys(attributes).forEach(item => {
         this.element.setAttribute(item, attributes[item]);
       });
     }
   }
-  setTextContent(text, html) {
+  setContent(text, html) {
     if (html) {
       if (text) {
         this.element.innerHTML = text;
       }
     } else {
       this.element.textContent = text;
-    }
-  }
-  setCallback(callback) {
-    if (typeof callback === 'function') {
-      this.element.addEventListener('click', event => callback(event));
     }
   }
 }
@@ -482,8 +484,6 @@ class MenuElementConstructor {
       callback: null
     };
     const element1 = new ElementCreator(param1);
-    // console.log(this.options.category);
-
     const categoryList = Object.keys(assets).filter(elem => elem.replace(/[0-9]/g, '') === `${this.options.category}`);
     const param2 = {
       tagName: 'img',
@@ -552,14 +552,6 @@ class MenuConstructor {
     this.changeMenu(this.menuButtons[0]);
     this.addListners();
   }
-
-  // configureDefault() {
-  //   this.product.forEach((options) => {
-  //     const element = new MenuElementConstructor(options);
-  //     this.container.append(element.getMenuElement());
-  //   });
-  // }
-
   changeMenu(btn, changing) {
     let change = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : false;
     if (!btn.classList.contains('btn_active')) {
@@ -671,24 +663,24 @@ class MenuConstructor {
     this.btnLoadMore.addEventListener('click', this.loadMoreContent.bind(this));
   }
 }
-;// CONCATENATED MODULE: ./src/modules/utils/popUp/popUp.html
+;// CONCATENATED MODULE: ./src/modules/utils/modal/modal.html
 // Imports
 
-var popUp_HTML_LOADER_IMPORT_0_ = new URL(/* asset import */ __webpack_require__(532), __webpack_require__.b);
-var popUp_HTML_LOADER_IMPORT_1_ = new URL(/* asset import */ __webpack_require__(586), __webpack_require__.b);
+var modal_HTML_LOADER_IMPORT_0_ = new URL(/* asset import */ __webpack_require__(532), __webpack_require__.b);
+var modal_HTML_LOADER_IMPORT_1_ = new URL(/* asset import */ __webpack_require__(586), __webpack_require__.b);
 // Module
-var popUp_HTML_LOADER_REPLACEMENT_0_ = getUrl_default()(popUp_HTML_LOADER_IMPORT_0_);
-var popUp_HTML_LOADER_REPLACEMENT_1_ = getUrl_default()(popUp_HTML_LOADER_IMPORT_1_);
-var popUp_code = "<div class=\"modal\"> <div class=\"modal_body\"> <div class=\"modal_content\"> <div class=\"modal_content_left\"> <img src=\"" + popUp_HTML_LOADER_REPLACEMENT_0_ + "\" alt=\"item\" class=\"modal_img\"> </div> <div class=\"modal_content_right\"> <div class=\"modal_text\"> <h3 class=\"modal_title\"></h3> <span class=\"modal_desription\"></span> </div> <div class=\"modal_size\"> <span class=\"modal_size_title\">Size</span> <form class=\"size_buttons\"> <input class=\"input_size\" type=\"radio\" id=\"sizeBtn1\" name=\"12\" checked=\"checked\"> <label data-size=\"s\" for=\"sizeBtn1\" class=\"size_btn\"> <div class=\"size_btn_logo\">S</div> <div class=\"size_btn_description\"></div> </label> <input class=\"input_size\" type=\"radio\" id=\"sizeBtn2\" name=\"12\"> <label data-size=\"m\" for=\"sizeBtn2\" class=\"size_btn\"> <div class=\"size_btn_logo\">M</div> <div class=\"size_btn_description\"></div> </label> <input class=\"input_size\" type=\"radio\" id=\"sizeBtn3\" name=\"12\"> <label data-size=\"l\" for=\"sizeBtn3\" class=\"size_btn\"> <div class=\"size_btn_logo\">L</div> <div class=\"size_btn_description\"></div> </label> </form> </div> <div class=\"modal_add\"> <span class=\"modal_add_title\">Additives</span> <form class=\"add_buttons\"> <input class=\"input_add\" type=\"checkbox\" id=\"addBtn1\" name=\"12\"> <label for=\"addBtn1\" class=\"add_btn\"> <div class=\"add_btn_logo\">1</div> <div class=\"add_btn_description\"></div> </label> <input class=\"input_add\" type=\"checkbox\" id=\"addBtn2\" name=\"12\"> <label for=\"addBtn2\" class=\"add_btn\"> <div class=\"add_btn_logo\">2</div> <div class=\"add_btn_description\"></div> </label> <input class=\"input_add\" type=\"checkbox\" id=\"addBtn3\" name=\"12\"> <label for=\"addBtn3\" class=\"add_btn\"> <div class=\"add_btn_logo\">3</div> <div class=\"add_btn_description\"></div> </label> </form> </div> <div class=\"modal_price_block\"> <h3 class=\"modal_price_text\">Total:</h3> <span class=\"modal_price\"></span> </div> <div class=\"modal_promotion\"> <img src=\"" + popUp_HTML_LOADER_REPLACEMENT_1_ + "\" alt=\"info\"> <div class=\"modal_prom_desc\">The cost is not final. Download our mobile app to see the final price and place your order. Earn loyalty points and enjoy your favorite coffee with up to 20% discount.</div> </div> <div class=\"modal_button_close\"> <span class=\"modal_close_text\">Close</span> </div> </div> </div> </div> </div>";
+var modal_HTML_LOADER_REPLACEMENT_0_ = getUrl_default()(modal_HTML_LOADER_IMPORT_0_);
+var modal_HTML_LOADER_REPLACEMENT_1_ = getUrl_default()(modal_HTML_LOADER_IMPORT_1_);
+var modal_code = "<div class=\"modal\"> <div class=\"modal_body\"> <div class=\"modal_content\"> <div class=\"modal_content_left\"> <img src=\"" + modal_HTML_LOADER_REPLACEMENT_0_ + "\" alt=\"item\" class=\"modal_img\"> </div> <div class=\"modal_content_right\"> <div class=\"modal_text\"> <h3 class=\"modal_title\"></h3> <span class=\"modal_desription\"></span> </div> <div class=\"modal_size\"> <span class=\"modal_size_title\">Size</span> <form class=\"size_buttons\"> <input class=\"input_size\" type=\"radio\" id=\"sizeBtn1\" name=\"12\" checked=\"checked\"> <label data-size=\"s\" for=\"sizeBtn1\" class=\"size_btn\"> <div class=\"size_btn_logo\">S</div> <div class=\"size_btn_description\"></div> </label> <input class=\"input_size\" type=\"radio\" id=\"sizeBtn2\" name=\"12\"> <label data-size=\"m\" for=\"sizeBtn2\" class=\"size_btn\"> <div class=\"size_btn_logo\">M</div> <div class=\"size_btn_description\"></div> </label> <input class=\"input_size\" type=\"radio\" id=\"sizeBtn3\" name=\"12\"> <label data-size=\"l\" for=\"sizeBtn3\" class=\"size_btn\"> <div class=\"size_btn_logo\">L</div> <div class=\"size_btn_description\"></div> </label> </form> </div> <div class=\"modal_add\"> <span class=\"modal_add_title\">Additives</span> <form class=\"add_buttons\"> <input class=\"input_add\" type=\"checkbox\" id=\"addBtn1\" name=\"12\"> <label for=\"addBtn1\" class=\"add_btn\"> <div class=\"add_btn_logo\">1</div> <div class=\"add_btn_description\"></div> </label> <input class=\"input_add\" type=\"checkbox\" id=\"addBtn2\" name=\"12\"> <label for=\"addBtn2\" class=\"add_btn\"> <div class=\"add_btn_logo\">2</div> <div class=\"add_btn_description\"></div> </label> <input class=\"input_add\" type=\"checkbox\" id=\"addBtn3\" name=\"12\"> <label for=\"addBtn3\" class=\"add_btn\"> <div class=\"add_btn_logo\">3</div> <div class=\"add_btn_description\"></div> </label> </form> </div> <div class=\"modal_price_block\"> <h3 class=\"modal_price_text\">Total:</h3> <span class=\"modal_price\"></span> </div> <div class=\"modal_promotion\"> <img src=\"" + modal_HTML_LOADER_REPLACEMENT_1_ + "\" alt=\"info\"> <div class=\"modal_prom_desc\">The cost is not final. Download our mobile app to see the final price and place your order. Earn loyalty points and enjoy your favorite coffee with up to 20% discount.</div> </div> <div class=\"modal_button_close\"> <span class=\"modal_close_text\">Close</span> </div> </div> </div> </div> </div>";
 // Exports
-/* harmony default export */ var popUp = (popUp_code);
-;// CONCATENATED MODULE: ./src/modules/utils/popUp/popUp.js
+/* harmony default export */ var modal = (modal_code);
+;// CONCATENATED MODULE: ./src/modules/utils/modal/modal.js
 
 
 
 
 
-class PopUp {
+class Modal {
   constructor(body, item) {
     this.body = body;
     this.item = item;
@@ -705,7 +697,7 @@ class PopUp {
     return this.element.getElement();
   }
   configure(wrapper) {
-    this.element = toElement(popUp);
+    this.element = toElement(modal);
     this.changeContent(this.element);
     wrapper.append(this.element);
     setTimeout(() => this.element.classList.add('modal_open'), 300);
@@ -724,6 +716,7 @@ class PopUp {
     this.changeDefaultPrice(container.children[3], targetItemObj);
     this.changeSizeContent(this.containerItem, targetItemObj);
     this.changeAddContent(this.containerItem, targetItemObj);
+    this.calcWithoutScrollBar();
   }
   changeItem(containerText, targetText) {
     const imgUrl = containerText.children[0];
@@ -802,19 +795,27 @@ class PopUp {
     }
   }
   closeModal(e) {
-    if (e.target.classList.contains('modal_button_close') || e.target.closest('.modal_button_close')) {
+    if (e.target.classList.contains('modal_button_close') || e.target.closest('.modal_button_close') || e.target.classList.contains('modal_body') && !e.target.closest('modal_content')) {
       e.target.closest('.modal').classList.remove('modal_open');
-      document.body.classList.remove('bodi_hidden');
       this.closeModalBlock(e);
     }
   }
+  calcWithoutScrollBar() {
+    const scrollPadding = `${window.innerWidth - document.querySelector('body').offsetWidth}px`;
+    document.body.style.paddingRight = scrollPadding;
+  }
+  calcWithScrollBar() {
+    document.body.classList.remove('body_hidden');
+    document.body.style.paddingRight = '0px';
+  }
   closeModalBlock(e) {
-    this.deleteListner();
+    this.deleteListners();
     setTimeout(() => {
+      this.calcWithScrollBar();
       e.target.closest('.modal').remove();
     }, 300);
   }
-  deleteListner() {
+  deleteListners() {
     document.removeEventListener('click', this.listSize);
     document.removeEventListener('click', this.listAdd);
     document.removeEventListener('click', this.closeBlock);
@@ -856,13 +857,12 @@ const menuContent = new MenuConstructor(menuWrapper, products_namespaceObject);
 document.addEventListener('click', e => {
   if (e.target.classList.contains('menu_item') || e.target.closest('.menu_item')) {
     const item = e.target.closest('.menu_item');
-    const modal = new PopUp(body, item);
+    const modal = new Modal(body, item);
     body.append(modal.element);
-    body.classList.add('bodi_hidden');
+    body.classList.add('body_hidden');
   }
 });
 // =====
 }();
 /******/ })()
 ;
-//# sourceMappingURL=menu.js.map

@@ -323,14 +323,14 @@ class Observer {
 ;// CONCATENATED MODULE: ./src/modules/main/Favourites_Coffee/favorites.html
 // Imports
 
-var favorites_HTML_LOADER_IMPORT_0_ = new URL(/* asset import */ __webpack_require__(203), __webpack_require__.b);
-var favorites_HTML_LOADER_IMPORT_1_ = new URL(/* asset import */ __webpack_require__(796), __webpack_require__.b);
-var ___HTML_LOADER_IMPORT_2___ = new URL(/* asset import */ __webpack_require__(55), __webpack_require__.b);
+var favorites_HTML_LOADER_IMPORT_0_ = new URL(/* asset import */ __webpack_require__(796), __webpack_require__.b);
+var favorites_HTML_LOADER_IMPORT_1_ = new URL(/* asset import */ __webpack_require__(55), __webpack_require__.b);
+var ___HTML_LOADER_IMPORT_2___ = new URL(/* asset import */ __webpack_require__(203), __webpack_require__.b);
 // Module
 var favorites_HTML_LOADER_REPLACEMENT_0_ = getUrl_default()(favorites_HTML_LOADER_IMPORT_0_);
 var favorites_HTML_LOADER_REPLACEMENT_1_ = getUrl_default()(favorites_HTML_LOADER_IMPORT_1_);
 var ___HTML_LOADER_REPLACEMENT_2___ = getUrl_default()(___HTML_LOADER_IMPORT_2___);
-var favorites_code = "<section id=\"favoritesCoffe\" class=\"favorites\"> <div class=\"container\"> <div class=\"favorites_wrapper\"> <h2 class=\"favorites_title\">Choose your <span class=\"favorites_word\">favorite</span> coffee</h2> <div class=\"favorites_slider_inner\"> <div class=\"favorites_slider_wrapper\"> <div class=\"fav_clider_arrow\"> <svg class=\"arrowBtn\" width=\"60\" height=\"60\" viewBox=\"0 0 60 60\" fill=\"transparent\" xmlns=\"http://www.w3.org/2000/svg\"> <rect x=\"0.5\" y=\"0.5\" width=\"59\" height=\"59\" rx=\"29.5\" stroke=\"#665F55\"/> <path class=\"svg_arrow\" d=\"M36.5 30H24M24 30L30 24M24 30L30 36\" stroke=\"#403F3D\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/> </svg> </div> <div class=\"fav_slider\"> <div class=\"fav_slider_wrapper\"> <div class=\"fav_slider_content slide3\"> <div class=\"fav_slider_content_inner\"> <img src=\"" + favorites_HTML_LOADER_REPLACEMENT_0_ + "\" alt=\"coffe1\" class=\"fav_slider_img\"> <div class=\"fav_slider_cont_description\"> <h4 class=\"fav_slider_description_title\">Ice coffee</h4> <span class=\"fav_slider_description_text\">A popular summer drink that tones and invigorates. Prepared from coffee, milk and ice.</span> <span class=\"fav_slider_description_price\">$4.50</span> </div> </div> </div> <div class=\"fav_slider_content slide1\"> <div class=\"fav_slider_content_inner\"> <img src=\"" + favorites_HTML_LOADER_REPLACEMENT_1_ + "\" alt=\"coffe1\" class=\"fav_slider_img\"> <div class=\"fav_slider_cont_description\"> <h4 class=\"fav_slider_description_title\">S’mores Frappuccino</h4> <span class=\"fav_slider_description_text\">This new drink takes an espresso and mixes it with brown sugar and cinnamon before being topped with oat milk.</span> <span class=\"fav_slider_description_price\">$5.50</span> </div> </div> </div> <div class=\"fav_slider_content slide2\"> <div class=\"fav_slider_content_inner\"> <img src=\"" + ___HTML_LOADER_REPLACEMENT_2___ + "\" alt=\"coffe1\" class=\"fav_slider_img\"> <div class=\"fav_slider_cont_description\"> <h4 class=\"fav_slider_description_title\">Caramel Macchiato</h4> <span class=\"fav_slider_description_text\">Fragrant and unique classic espresso with rich caramel-peanut syrup, with cream under whipped thick foam.</span> <span class=\"fav_slider_description_price\">$5.00</span> </div> </div> </div> </div> </div> <div class=\"fav_clider_arrow\"> <svg class=\"arrowBtn\" width=\"60\" height=\"60\" viewBox=\"0 0 60 60\" fill=\"transparent\" xmlns=\"http://www.w3.org/2000/svg\"> <rect x=\"0.5\" y=\"0.5\" width=\"59\" height=\"59\" rx=\"29.5\" stroke=\"#665F55\"/> <path class=\"svg_arrow\" d=\"M24 30H36.5M36.5 30L30.5 24M36.5 30L30.5 36\" stroke=\"#403F3D\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/> </svg> </div> </div> <div class=\"favorites_slider_pagination_wrapper\"> <div class=\"fav_pag_inner\"> <div class=\"fav_pag_element\"> <div class=\"fav_pag_time\"></div> </div> <div class=\"fav_pag_element\"> <div class=\"fav_pag_time\"></div> </div> <div class=\"fav_pag_element\"> <div class=\"fav_pag_time\"></div> </div> </div> </div> </div> </div> </div></section>";
+var favorites_code = "<section id=\"favoritesCoffe\" class=\"favorites\"> <div class=\"container\"> <div class=\"favorites_wrapper\"> <h2 class=\"favorites_title\">Choose your <span class=\"favorites_word\">favorite</span> coffee</h2> <div class=\"favorites_slider_inner\"> <div class=\"favorites_slider_wrapper\"> <div class=\"fav_clider_arrow\"> <svg class=\"arrowBtn\" width=\"60\" height=\"60\" viewBox=\"0 0 60 60\" fill=\"transparent\" xmlns=\"http://www.w3.org/2000/svg\"> <rect x=\"0.5\" y=\"0.5\" width=\"59\" height=\"59\" rx=\"29.5\" stroke=\"#665F55\"/> <path class=\"svg_arrow\" d=\"M36.5 30H24M24 30L30 24M24 30L30 36\" stroke=\"#403F3D\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/> </svg> </div> <div class=\"fav_slider\"> <div class=\"fav_slider_wrapper\"> <div class=\"fav_slider_content slide1\"> <div class=\"fav_slider_content_inner\"> <img src=\"" + favorites_HTML_LOADER_REPLACEMENT_0_ + "\" alt=\"coffe1\" class=\"fav_slider_img\" ondragstart=\"return!1\"> <div class=\"fav_slider_cont_description\"> <h4 class=\"fav_slider_description_title\">S’mores Frappuccino</h4> <span class=\"fav_slider_description_text\">This new drink takes an espresso and mixes it with brown sugar and cinnamon before being topped with oat milk.</span> <span class=\"fav_slider_description_price\">$5.50</span> </div> </div> </div> <div class=\"fav_slider_content slide2\"> <div class=\"fav_slider_content_inner\"> <img src=\"" + favorites_HTML_LOADER_REPLACEMENT_1_ + "\" alt=\"coffe1\" class=\"fav_slider_img\" ondragstart=\"return!1\"> <div class=\"fav_slider_cont_description\"> <h4 class=\"fav_slider_description_title\">Caramel Macchiato</h4> <span class=\"fav_slider_description_text\">Fragrant and unique classic espresso with rich caramel-peanut syrup, with cream under whipped thick foam.</span> <span class=\"fav_slider_description_price\">$5.00</span> </div> </div> </div> <div class=\"fav_slider_content slide3\"> <div class=\"fav_slider_content_inner\"> <img src=\"" + ___HTML_LOADER_REPLACEMENT_2___ + "\" alt=\"coffe1\" class=\"fav_slider_img\" ondragstart=\"return!1\"> <div class=\"fav_slider_cont_description\"> <h4 class=\"fav_slider_description_title\">Ice coffee</h4> <span class=\"fav_slider_description_text\">A popular summer drink that tones and invigorates. Prepared from coffee, milk and ice.</span> <span class=\"fav_slider_description_price\">$4.50</span> </div> </div> </div> </div> </div> <div class=\"fav_clider_arrow\"> <svg class=\"arrowBtn\" width=\"60\" height=\"60\" viewBox=\"0 0 60 60\" fill=\"transparent\" xmlns=\"http://www.w3.org/2000/svg\"> <rect x=\"0.5\" y=\"0.5\" width=\"59\" height=\"59\" rx=\"29.5\" stroke=\"#665F55\"/> <path class=\"svg_arrow\" d=\"M24 30H36.5M36.5 30L30.5 24M36.5 30L30.5 36\" stroke=\"#403F3D\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/> </svg> </div> </div> <div class=\"favorites_slider_pagination_wrapper\"> <div class=\"fav_pag_inner\"> <div class=\"fav_pag_element\"> <div class=\"fav_pag_time\"></div> </div> <div class=\"fav_pag_element\"> <div class=\"fav_pag_time\"></div> </div> <div class=\"fav_pag_element\"> <div class=\"fav_pag_time\"></div> </div> </div> </div> </div> </div> </div></section>";
 // Exports
 /* harmony default export */ var favorites = (favorites_code);
 ;// CONCATENATED MODULE: ./src/modules/main/Favourites_Coffee/favorites.js
@@ -410,13 +410,21 @@ class BurgerMenu {
     this.burgerBtn = document.querySelector('.burger_btn');
     this.navLinks = document.querySelectorAll('.nav_item_link');
     this.menuLink = document.querySelector('.header_btn');
-    this.addListers();
+    this.addListners();
+    this.checkWidth();
   }
-  addListers() {
+  addListners() {
+    window.addEventListener('resize', this.checkWidth.bind(this));
     this.burgerBtn.addEventListener('click', this.navTogleOnBtn.bind(this));
     this.wrapper.addEventListener('click', this.checkNavActive.bind(this));
     this.navLinks.forEach(link => link.addEventListener('click', this.checkNavActive.bind(this)));
     this.menuLink.addEventListener('click', this.checkNavActive.bind(this));
+  }
+  checkWidth() {
+    const windowWidth = document.body.offsetWidth;
+    if (windowWidth > 768) {
+      this.checkNavActive();
+    }
   }
   navTogleOnBtn() {
     if (!this.wrapper.classList.contains('nav_active')) {
@@ -448,20 +456,20 @@ class BurgerMenu {
 }
 ;// CONCATENATED MODULE: ./src/modules/main/Favourites_Coffee/slider.js
 class Slider {
-  constructor(sladerBlock) {
-    this.sladerBlock = sladerBlock;
-    this.slider = this.sladerBlock.querySelector('.fav_slider');
-    this.sliderContent = this.sladerBlock.querySelectorAll('.fav_slider_content_inner');
-    this.slideBtn = this.sladerBlock.querySelectorAll('.arrowBtn');
+  constructor(sliderBlock) {
+    this.sliderBlock = sliderBlock;
+    this.slider = this.sliderBlock.querySelector('.fav_slider');
+    this.sliderContent = this.sliderBlock.querySelectorAll('.fav_slider_content_inner');
+    this.slideBtn = this.sliderBlock.querySelectorAll('.arrowBtn');
     this.sliderWrapper = document.querySelector('.fav_slider_wrapper');
-    this.slidesElements = this.sladerBlock.querySelectorAll('.fav_slider_content');
+    this.slidesElements = this.sliderBlock.querySelectorAll('.fav_slider_content');
     this.pagElems = document.querySelectorAll('.fav_pag_element');
     this.count = 0;
     this.timeCount = 0;
     this.isMove = false;
+    this.isSwipeMouse = false;
     this.isOnView = false;
     this.elemWidth = 0;
-    this.midleElem = 0;
     this.posStart = 0;
     this.posX1 = 0;
     this.posX2 = 0;
@@ -472,7 +480,6 @@ class Slider {
   }
   checkWidth() {
     this.elemWidth = this.slider.offsetWidth;
-    this.midleElem = this.elemWidth / 2;
     this.slidesElements.forEach(element => {
       element.setAttribute('style', `width: ${this.elemWidth}px`);
     });
@@ -487,24 +494,24 @@ class Slider {
     });
     this.pagElems[counter].classList.add('fav_pag_active');
   }
+  changeTransform() {
+    const slide = this.sliderWrapper;
+    const widthCount = 33.3 * this.count;
+    slide.setAttribute('style', `transform: translateX(${-widthCount}%)`);
+    this.changePagElem(this.count);
+    this.isMove = false;
+  }
   slideNext() {
     if (!this.isMove) {
       this.isMove = true;
       this.timeCount = 0;
       if (this.count >= 2) {
         this.count = 0;
+        this.changeTransform();
       } else {
         this.count += 1;
+        this.changeTransform();
       }
-      const slide = this.sliderWrapper.children[0];
-      this.sliderWrapper.classList.add('slide_next');
-      this.changePagElem(this.count);
-      setTimeout(() => {
-        this.sliderWrapper.classList.remove('slide_next');
-        this.sliderWrapper.children[0].remove();
-        this.sliderWrapper.append(slide);
-        this.isMove = false;
-      }, 650);
     }
   }
   slidePrev() {
@@ -513,32 +520,38 @@ class Slider {
       this.timeCount = 0;
       if (this.count <= 0) {
         this.count = 2;
+        this.changeTransform();
       } else {
         this.count -= 1;
+        this.changeTransform();
       }
-      const slide = this.sliderWrapper.children[2];
-      this.sliderWrapper.classList.add('slide_prev');
-      this.changePagElem(this.count);
-      setTimeout(() => {
-        this.sliderWrapper.classList.remove('slide_prev');
-        this.sliderWrapper.children[2].remove();
-        this.sliderWrapper.prepend(slide);
-        this.isMove = false;
-      }, 650);
     }
   }
-  swipeStart(event) {
-    this.midleElem = this.elemWidth / 2;
-    this.posStart = event.touches[0].clientX;
+  swipeStartMouse(event) {
+    this.posStartX = event.clientX;
+    this.posStartY = event.clientY;
   }
-  swipeMove(event) {
-    this.posEnd = event.touches[0].clientX;
+  swipeStartTouch(event) {
+    this.posStartX = event.touches[0].clientX;
+    this.posStartY = event.touches[0].clientY;
+  }
+  swipeMoveMouse(event) {
+    this.posEndX = event.clientX;
+    this.posEndY = event.clientY;
+  }
+  swipeMoveTouch(event) {
+    this.posEndX = event.touches[0].clientX;
+    this.posEndY = event.touches[0].clientY;
   }
   swipeEnd(event) {
-    if (this.posStart - this.posEnd > 0) {
-      this.slideNext();
-    } else {
-      this.slidePrev();
+    console.log(this.posStart);
+    console.log(this.posEnd);
+    if (Math.abs(this.posStartX - this.posEndX) > 50 && Math.abs(this.posStartY - this.posEndY) < 30) {
+      if (this.posStartX - this.posEndX > 0) {
+        this.slideNext();
+      } else {
+        this.slidePrev();
+      }
     }
   }
   timeInterval(elements) {
@@ -590,10 +603,10 @@ class Slider {
       if (this.isOnView) {
         clearInterval(this.autoInterval);
       }
-      this.swipeStart(event);
+      this.swipeStartTouch(event);
     });
     this.slider.addEventListener('touchmove', event => {
-      this.swipeMove(event);
+      this.swipeMoveTouch(event);
     });
     this.slider.addEventListener('touchend', event => {
       if (this.isOnView) {
@@ -601,15 +614,43 @@ class Slider {
       }
       this.swipeEnd(event);
     });
+    this.slider.addEventListener('mousedown', event => {
+      if (this.isOnView) {
+        if (!this.isSwipeMouse) {
+          this.isSwipeMouse = true;
+          clearInterval(this.autoInterval);
+        }
+      }
+      this.swipeStartMouse(event);
+    });
+    this.slider.addEventListener('mousemove', event => {
+      this.swipeMoveMouse(event);
+    });
+    this.slider.addEventListener('mouseup', event => {
+      if (this.isOnView) {
+        if (event.target.classList.contains('fav_slider_content_inner') || event.target.closest('.fav_slider_content_inner')) {
+          this.swipeEnd(event);
+          this.isSwipeMouse = false;
+        } else if (this.isSwipeMouse) {
+          this.swipeEnd(event);
+          this.autoInterval = setInterval(() => this.timeInterval(this.pagElems), 125);
+          this.isSwipeMouse = false;
+        }
+      }
+    });
     this.sliderContent.forEach(elem => {
       elem.addEventListener('mouseover', () => {
         if (this.isOnView) {
-          clearInterval(this.autoInterval);
+          if (!this.isSwipeMouse) {
+            clearInterval(this.autoInterval);
+          }
         }
       });
       elem.addEventListener('mouseout', () => {
         if (this.isOnView) {
-          this.autoInterval = setInterval(() => this.timeInterval(this.pagElems), 125);
+          if (!this.isSwipeMouse) {
+            this.autoInterval = setInterval(() => this.timeInterval(this.pagElems), 125);
+          }
         }
       });
     });
@@ -664,4 +705,3 @@ const slider = new Slider(sladerBlock);
 }();
 /******/ })()
 ;
-//# sourceMappingURL=main.js.map
